@@ -1,4 +1,4 @@
-# [preact-hn](https://react-hn.appspot.com)
+# [preact-hn](https://preact-hn.appspot.com)
 
 A Preact port of a [React](http://facebook.github.io/react) &
 [react-router](https://github.com/rackt/react-router)-powered implementation of
@@ -10,6 +10,48 @@ This is mostly made possible thanks to `nwb --preact`
 [![react-hn screenshot](https://github.com/insin/react-hn/raw/master/screenshot.png "New comment highlighting in react-hn")](https://react-hn.appspot.com)
 
 Live version: https://preact-hn.appspot.com
+
+Build differences:
+
+React: 
+
+```
+✔ Building React app
+
+File sizes after gzip:
+
+  dist/vendor.511483ef.js              114.19 KB
+  dist/app.8b44e34e.js                 9.69 KB
+  dist/sw-toolbox.js                   5.84 KB
+  dist/css/style.css                   1.8 KB
+  dist/PermalinkedComment.7106819e.js  1.56 KB
+  dist/UserProfile.60e03f1c.js         618 B
+  dist/core.js                         590 B
+  dist/runtime-caching.js              511 B
+  dist/NotFound.c4c69d8e.js            214 B
+  dist/build/vendor.js                 186 B
+  dist/service-worker.js               131 B
+```
+
+Preact:
+
+```
+✔ Building Preact app
+
+File sizes after gzip:
+
+  dist/vendor.4833966e.js              79.34 KB
+  dist/app.8b44e34e.js                 9.68 KB
+  dist/sw-toolbox.js                   5.84 KB
+  dist/service-worker.js               4.24 KB
+  dist/css/style.css                   1.8 KB
+  dist/PermalinkedComment.7106819e.js  1.56 KB
+  dist/UserProfile.60e03f1c.js         618 B
+  dist/core.js                         590 B
+  dist/runtime-caching.js              511 B
+  dist/NotFound.c4c69d8e.js            214 B
+  dist/build/vendor.js                 186 B
+```
 
 ## Features
 
