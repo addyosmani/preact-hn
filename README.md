@@ -6,7 +6,7 @@ A Preact port of [ReactHN](https://react-hn.appspot.com) - a [React](http://face
 [Firebase API](https://github.com/HackerNews/API).
 
 This is mostly made possible thanks to `nwb --preact`. We need both
-Preact and preact-compat to get this all working.
+Preact and preact-compat to get this all working. [WebPageTest](https://www.webpagetest.org/video/compare.php?tests=161016_VD_CR0,161016_61_CR1) comparison of the React and Preact versions.
 
 [![react-hn screenshot](https://github.com/insin/react-hn/raw/master/screenshot.png "New comment highlighting in react-hn")](https://react-hn.appspot.com)
 
