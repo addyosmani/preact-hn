@@ -1,11 +1,12 @@
 # [preact-hn](https://preact-hn.appspot.com)
 
-A Preact port of a [React](http://facebook.github.io/react) &
+A Preact port of [ReactHN](https://react-hn.appspot.com) - a [React](http://facebook.github.io/react) &
 [react-router](https://github.com/rackt/react-router)-powered implementation of
 [Hacker News](https://news.ycombinator.com) using its
 [Firebase API](https://github.com/HackerNews/API).
 
-This is mostly made possible thanks to `nwb --preact`
+This is mostly made possible thanks to `nwb --preact`. We need both
+Preact and preact-compat to get this all working.
 
 [![react-hn screenshot](https://github.com/insin/react-hn/raw/master/screenshot.png "New comment highlighting in react-hn")](https://react-hn.appspot.com)
 
