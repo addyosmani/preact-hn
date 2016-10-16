@@ -1,0 +1,334 @@
+body {
+  background-color: #fff;
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+img {
+  vertical-align: text-bottom;
+}
+pre {
+  white-space: pre-wrap;
+}
+span.control {
+  cursor: pointer;
+}
+span.control:hover {
+  text-decoration: underline;
+}
+
+/* From https://github.com/tobiasahlin/SpinKit */
+.Spinner {
+}
+.Spinner > div {
+  background-color: #666;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.Spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.Spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.App__wrap {
+  width: 90%;
+  max-width: 1280px;
+  margin: 8px auto;
+  color: #000;
+  background-color: #f5f5f5;
+  font-size: 13.3333px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.App__header {
+  color: #00d8ff;
+  background-color: #222;
+  padding: 6px;
+  line-height: 18px;
+  vertical-align: middle;
+  position: relative;
+}
+.App__settings {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.Settings {
+  box-sizing: border-box;
+  padding: .75em;
+  position: absolute;
+  width: 36%%;
+  background-color: inherit;
+  right: 0;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.Settings__setting td:first-child {
+  text-align: right;
+}
+.Settings p {
+  color: #fff;
+}
+.Settings div:last-child > p:last-child {
+  margin-bottom: 0;
+}
+.App__header img {
+  border: 1px solid #00d8ff;
+  margin-right: .25em;
+}
+.App__header a {
+  color: inherit;
+  text-decoration: none;
+}
+.App__header a.active {
+  color: #fff;
+}
+.App__homelink {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00d8ff !important;
+  margin-right: .75em;
+}
+.App__homelink.active {
+  color: #fff !important;
+}
+.App__content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.App__footer {
+  margin-top: 1em;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+  color: #333;
+  padding: 6px 0;
+}
+.App__footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.Items__list {
+  padding-left: 3em;
+  padding-right: 1.25em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+.ListItem {
+  margin-bottom: 16px;
+}
+.ListItem--loading {
+  min-height: 34px;
+}
+
+.Updates--loading {
+  padding: 1em 1.25em 0 1.25em;
+  margin-bottom: 1em;
+}
+.Updates__notice {
+  padding: 0 1.25em;
+}
+.Updates .Comment {
+  margin-bottom: .75em;
+}
+
+.Paginator {
+  margin-left: 3em;
+  padding: .5em 0;
+}
+.Paginator a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.Paginator a:hover {
+  text-decoration: underline;
+}
+
+.Item__content,
+.Item--loading {
+  padding: 1em 1.25em 0 1.25em;
+  margin-bottom: 1em;
+}
+.Item__title {
+  color: #666;
+  font-size:18px;
+}
+.Item__title a {
+  text-decoration: none;
+  color: #000;
+}
+.Item__title a:hover {
+  text-decoration: underline;
+}
+.Item__title a:visited {
+  color: #666;
+}
+.Item__meta {
+  color: #666;
+}
+.Item > .Item__meta {
+  margin-bottom: 1em;
+}
+.Item__meta a {
+  text-decoration: none;
+  color: inherit;
+}
+.Item__meta a:hover {
+  text-decoration: underline;
+}
+.Item__meta em {
+  font-style: normal;
+  background-color: #ffffde;
+  color: #000;
+}
+.Item__by a, .ListItem__newcomments a {
+  font-weight: bold;
+}
+.Item__text {
+  margin-top: 1em;
+}
+.Item__poll {
+  margin-top: 1em;
+  padding-left: 2.5em;
+}
+
+.PollOption {
+  margin-bottom: 10px;
+}
+.PollOption__score {
+  color: #666;
+}
+
+.PermalinkedComment > .Comment__content {
+  margin-bottom: 1em;
+}
+.Comment {
+}
+.Comment--new > .Comment__content {
+  background-color: #ffffde;
+}
+/* Highlights a comment and its descendants on hover -- too distracting?
+.Comment:hover > .Comment__content {
+  background-color: #fff;
+}
+*/
+.Comment__meta {
+  color: #666;
+  margin-bottom: .5em
+}
+.Comment__meta a {
+  text-decoration: none;
+  color: inherit;
+}
+.Comment__meta a:hover {
+  text-decoration: underline;
+}
+.Comment__meta em {
+  font-style: normal;
+  background-color: #ffffde;
+  color: #000;
+}
+.Comment__user {
+  font-weight: bold;
+}
+.Comment__content, .Comment--loading {
+  padding-right: 1.25em;
+  padding-top: .65em;
+  padding-bottom: .65em;
+}
+.Comment--level0 .Comment__content, .Comment--level0.Comment--loading { padding-left: 1.25em; }
+.Comment--level1 .Comment__content, .Comment--level1.Comment--loading { padding-left: 3.75em; }
+.Comment--level2 .Comment__content, .Comment--level2.Comment--loading { padding-left: 6.25em; }
+.Comment--level3 .Comment__content, .Comment--level3.Comment--loading { padding-left: 8.75em; }
+.Comment--level4 .Comment__content, .Comment--level4.Comment--loading { padding-left: 11.25em; }
+.Comment--level5 .Comment__content, .Comment--level5.Comment--loading { padding-left: 13.75em; }
+.Comment--level6 .Comment__content, .Comment--level6.Comment--loading { padding-left: 16.25em; }
+.Comment--level7 .Comment__content, .Comment--level7.Comment--loading { padding-left: 18.75em; }
+.Comment--level8 .Comment__content, .Comment--level8.Comment--loading { padding-left: 21.25em; }
+.Comment--level9 .Comment__content, .Comment--level9.Comment--loading { padding-left: 23.75em; }
+.Comment--level10 .Comment__content, .Comment--level10.Comment--loading { padding-left: 26.25em; }
+.Comment--level11 .Comment__content, .Comment--level11.Comment--loading { padding-left: 28.75em; }
+.Comment--level12 .Comment__content, .Comment--level12.Comment--loading { padding-left: 31.25em; }
+.Comment--level13 .Comment__content, .Comment--level13.Comment--loading { padding-left: 33.75em; }
+.Comment--level14 .Comment__content, .Comment--level14.Comment--loading { padding-left: 36.25em; }
+.Comment--level15 .Comment__content, .Comment--level15.Comment--loading { padding-left: 38.75em; }
+.Comment__kids {
+}
+.Comment__collapse {
+  cursor: pointer;
+}
+.Comment--collapsed .Comment__text,
+.Comment--collapsed > .Comment__kids {
+  display: none;
+}
+.Comment__text a {
+  color: #000;
+}
+.Comment__text a:visited {
+  color: #666;
+}
+.Comment__text p:last-child, .Comment__text pre:last-child {
+  margin-bottom: 0;
+}
+.Comment--dead > .Comment__content > .Comment__text {
+  color: #ddd !important;
+}
+.Comment--error .Comment__meta {
+  color: #f33;
+}
+
+.UserProfile {
+  padding-left: 1.25em;
+  padding-top: 1em;
+}
+.UserProfile h4 {
+  margin: 0 0 1em 0;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+  .App__wrap {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  /* Hide the App title homelink on narrow viewports */
+  .App__homelink {
+    display: none;
+  }
+
+  /* Safari only fix to ensure Settings menu is full width */
+  _::-webkit-:not(:root:root), .Settings {
+    width: 100%;
+  }
+}
+
+/* Hide the Settings link on iPhone 5 */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .App__settings {
+    display: none;
+  }
+}
