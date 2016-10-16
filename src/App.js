@@ -59,7 +59,7 @@ var App = React.createClass({
           <Link to="/show" activeClassName="active">show</Link>{' | '}
           <Link to="/ask" activeClassName="active">ask</Link>{' | '}
           <Link to="/jobs" activeClassName="active">jobs</Link>
-          <a className="App__settings" tabIndex="0" onClick={this.toggleSettings}>
+          <a className="App__settings" tabIndex="0" onClick={this.toggleSettings} onKeyPress={this.toggleSettings}>
             {this.state.showSettings ? 'hide settings' : 'settings'}
           </a>
           {this.state.showSettings && <Settings key="settings"/>}
