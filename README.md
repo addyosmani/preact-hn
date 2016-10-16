@@ -9,16 +9,16 @@ This is mostly made possible thanks to `nwb --preact`
 
 [![react-hn screenshot](https://github.com/insin/react-hn/raw/master/screenshot.png "New comment highlighting in react-hn")](https://react-hn.appspot.com)
 
-Live version: https://react-hn.appspot.com/
+Live version: https://preact-hn.appspot.com
 
 ## Features
 
 * Supports display of all item types:
-  [stories](https://react-hn.appspot.com/#/story/8863),
-  [jobs](https://react-hn.appspot.com/#/job/8426937),
-  [polls](https://react-hn.appspot.com/#/poll/126809) and
-  [comments](https://react-hn.appspot.com/#/comment/8054455)
-* Basic [user profiles](https://react-hn.appspot.com/#/user/patio11)
+  [stories](https://preact-hn.appspot.com/#/story/8863),
+  [jobs](https://preact-hn.appspot.com/#/job/8426937),
+  [polls](https://preact-hn.appspot.com/#/poll/126809) and
+  [comments](https://preact-hn.appspot.com/#/comment/8054455)
+* Basic [user profiles](https://preact-hn.appspot.com/#/user/patio11)
 * Collapsible comment threads, with child counts
 * "Realtime" updates (free via Firebase!)
 * Last visit details for stories are cached in `localStorage`
@@ -41,7 +41,7 @@ Live version: https://react-hn.appspot.com/
   * show deleted - show comments flagged as deleted in threads
 * Delayed comment detection - so tense! Who will it be? What will they say?
 
-[Feature requests are welcome!](https://github.com/insin/react-hn/issues/new)
+[Feature requests are welcome!](https://github.com/addyosmani/preact-hn/issues/new)
 
 ## Building
 
