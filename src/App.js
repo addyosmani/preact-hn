@@ -49,7 +49,7 @@ var App = React.createClass({
   },
 
   render() {
-    return <div className="App" onClick={this.state.showSettings && this.toggleSettings}>
+    return <div className="App">
       <div className="App__wrap">
         <div className="App__header">
           <Link to="/news" className="App__homelinkicon"><img src="img/logo.png" width="16" height="16" alt="" /></Link>{' '}
@@ -59,7 +59,7 @@ var App = React.createClass({
           <Link to="/show" activeClassName="active">show</Link>{' | '}
           <Link to="/ask" activeClassName="active">ask</Link>{' | '}
           <Link to="/jobs" activeClassName="active">jobs</Link>
-          <a className="App__settings" tabIndex="0" onClick={this.toggleSettings} onKeyPress={this.toggleSettings}>
+          <a className="App__settings" tabIndex="0" onClick={this.toggleSettings}>
             {this.state.showSettings ? 'hide settings' : 'settings'}
           </a>
           {this.state.showSettings && <Settings key="settings"/>}
