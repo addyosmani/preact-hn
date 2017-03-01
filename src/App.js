@@ -49,7 +49,7 @@ var App = React.createClass({
   },
 
   render() {
-    return <div className="App" onClick={this.state.showSettings && this.toggleSettings}>
+    return <div className="App">
       <div className="App__wrap">
         <div className="App__header">
           <Link to="/news" className="App__homelinkicon"><img src="img/logo.png" width="16" height="16" alt="" /></Link>{' '}
