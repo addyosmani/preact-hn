@@ -69,7 +69,7 @@ var App = React.createClass({
           {this.state.showChildren ? this.props.children : ''}
         </div>
         <div className="App__footer">
-          <a href="https://github.com/insin/react-hn">insin/react-hn</a>
+          <a href="https://github.com/addyosmani/preact-hn">addyosmani/preact-hn</a>
         </div>
       </div>
     </div>
